@@ -1,0 +1,7 @@
+form{
+    padding: 30px;
+    border: 1px solid #000000;  
+    position: relative;
+     top: 35vh;
+     transform: translateY(-50%);
+}
