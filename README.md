@@ -11,4 +11,5 @@ To run in development mode
 >npm run dev
 
 npm run build:prod //to generate files for production
+
 npm start //for production
