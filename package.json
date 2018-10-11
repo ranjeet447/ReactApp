@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build:prod && npm run server",
-    "dev": "concurrently \"npm run build\" \"npm run server\"",
+    "dev": "npm run build:prod && concurrently \"npm run build\" \"npm run server\"",
     "build": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build:prod": "webpack -p && copy src\\index.html dist\\index.html",
     "server": "concurrently \"nodemon server/server.js\" \"json-server --watch server/db.json\""
